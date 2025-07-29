@@ -1,0 +1,71 @@
+/* Base & Reset */
+* { margin:0; padding:0; box-sizing:border‑box; }
+body { font-family:'Segoe UI',sans-serif; background:#fff0f5; color:#333; line-height:1.6; }
+a { text-decoration:none;color:inherit; }
+button, .btn { cursor:pointer; }
+
+/* Header */
+.main-header { display:flex; justify-content:space-between; align-items:center; background:#fff; padding:12px 24px; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:999; }
+.logo { height:60px; }
+.clinic-name { font-size:1.5rem; color:#0077b6; }
+.nav-links a { margin:0 12px; font-weight:500; color:#333; }
+.nav-links a:hover { color:#ff1493; }
+
+/* Section visibility */
+.page-section { display:none; padding:40px 20px; }
+.page-section.active { display:block; }
+
+/* Hero */
+.hero { background:#ffe4ec; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.hero img { max-width:480px; border-radius:10px; margin-top:20px; }
+.hero-text h2 { font-size:32px; margin-bottom:16px; }
+.hero-text span { color:#ff1493; }
+
+/* Services */
+.services { background:#f9f9f9;text-align:center; }
+.service-boxes { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+.service-card { background:#fff;border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:25px; width:280px; transition:transform 0.3s; }
+.service-card:hover { transform:translateY(-5px); }
+.service-card img { width:60px;height:60px;margin-bottom:15px; }
+.service-card h3 { font-size:20px; color:#c71585; margin-bottom:10px; }
+.service-card p { font-size:14px; color:#666; }
+
+/* Telemedicine & btn */
+.telemedicine, .consultation { text-align:center; background:#f6fcff; }
+.telemedicine ul, .consultation form { max-width:500px; margin:auto; }
+.telemedicine li { list-style:none; margin:8px 0; font-size:1rem; }
+.btn { display:inline-block; background:#cc3366; color:#fff; padding:12px 24px; border-radius:6px; transition:0.3s ease; }
+.btn:hover { background:#a82a55; }
+
+/* Consultation */
+.consultation form { display:flex; flex-direction:column; gap:15px; }
+.consultation input, .consultation textarea { padding:12px; border:1px solid #ccc; border-radius:6px; font-size:1rem; width:100%; }
+.consultation textarea { min-height:100px; resize:vertical; }
+.consultation button { padding:12px; background:#cc3366; color:#fff; border:none; border-radius:6px; font-size:1rem; cursor:pointer; }
+.consultation button:hover { background:#a82a55; }
+.success-message { margin-top:20px; font-weight:bold; color:green; display:none; }
+
+/* Doctor */
+.doctor { background:#fff; text-align:center; }
+.doctor-profile { display:flex; flex-direction:column; align-items:center; gap:20px; }
+.doctor-profile img { width:180px; height:180px; border-radius:50%; border:5px solid #c71585; object-fit:cover; }
+.doctor-details { max-width:600px; text-align:center; }
+.doctor-details h3 { font-size:24px; margin:10px 0; color:#333; }
+.doctor-details p { font-size:16px; color:#555; }
+
+/* Boxed sections */
+.boxed-section { max-width:600px; margin:20px auto; padding:20px; background:#fafafa; border:1px solid #ccc; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.boxed-content { font-size:18px; color:#444; }
+.boxed-content ul { list-style:none; padding-left:0; margin-top:10px; }
+.boxed-content li { padding-left:1.2em; position:relative; margin-bottom:10px; }
+.boxed-content li::before { content:"✔️"; position:absolute; left:0; color:#c71585; }
+
+/* Footer */
+footer { text-align:center; background:#f2f2f2; padding:15px; color:#666; font-size:14px; margin-top:40px; }
+
+/* Responsive */
+@media (max-width:768px) {
+  .hero { flex-direction:column; text-align:center; }
+  .nav-links { flex-wrap:wrap; padding-top:10px; text-align:center; }
+  .nav-links a { display:inline-block; margin:10px 5px; }
+}
